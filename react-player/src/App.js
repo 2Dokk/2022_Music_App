@@ -1,11 +1,9 @@
 import React from "react";
-//Adding Compoenents
+//Adding Components
+import Player from "./components/Player";
 import Song from "./components/Song";
-import Player from "./components/Player"
-//Import styles
-import "./styles/app.scss";
 
-function App() {
+function App(){
   return (
     <div className="App">
       <Song />

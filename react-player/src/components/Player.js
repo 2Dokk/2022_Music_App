@@ -65,4 +65,3 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   );
 };
 
-export default Player;

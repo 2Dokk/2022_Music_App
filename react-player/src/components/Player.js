@@ -39,7 +39,6 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
     currentTime: 0,
     duration: 0,
   });
-  const i = 1;
   return (
     <div className="player">
       <div className="time-control">

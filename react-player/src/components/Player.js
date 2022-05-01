@@ -61,7 +61,6 @@ const Player = ({
           icon={faAngleRight}
         />
       </div>
-      \
     </div>
   );
 };

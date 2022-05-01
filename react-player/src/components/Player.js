@@ -41,6 +41,9 @@ const Player = ({
     if (direction === "skip-forward") {
       setCurrentSong(songs[(currentIndex + 1) % songs.length]);
     }
+    if (direction === "skip-back") {
+      setCurrentSong(songs[(currentIndex - 1) % songs.length]);
+    }
   };
   return (
     <div className="player">

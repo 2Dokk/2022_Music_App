@@ -24,20 +24,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  width: 50%;
+  width: 40%;
   svg {
     cursor: pointer;
   }
-}
-
-input[type="range"]:focus {
-  outline: none;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
-  background: black;
 }
 .track {
   background: lightblue;
@@ -55,5 +45,17 @@ input[type="range"]::-webkit-slider-thumb {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(10%);
+  transform: translateX(0%);
+  padding: 1rem;
+  pointer-events: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: black;
 }

@@ -27,7 +27,14 @@ function App() {
     const duration = e.target.duration;
     //Calculate percentage
     const roundedCurrent = Math.round(current);
-    setSongInfo({ ...songInfo, currentTime: current, duration });
+    const roundedDuration = Math.round(duration);
+    const animation = Math.round((roundedCurrent / roundedDuration) * 100);
+    setSongInfo({
+      ...songInfo,
+      currentTime: current,
+      duration,
+      animationPercentage: animation,
+    });
   };
 
   return (
